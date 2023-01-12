@@ -1,0 +1,52 @@
+{
+  "dogs": [
+    {
+      "id": 1,
+      "name": "Pimpek",
+      "age": "3",
+      "character": "Naughty and energetic"
+    },
+    {
+      "id": 2,
+      "name": "Max",
+      "age": "5",
+      "character": "Hates children"
+    },
+    {
+      "id": 3,
+      "name": "Zoe",
+      "age": "2",
+      "character": "Loves to eat"
+    },
+    {
+      "id": 4,
+      "name": "Esther",
+      "age": "8",
+      "character": "Stubborn but friendly"
+    },
+    {
+      "id": 5,
+      "name": "Tom",
+      "age": "5",
+      "character": "Clever and calm"
+    },
+    {
+      "id": 6,
+      "name": "Sweety",
+      "age": "4",
+      "character": "Good with children"
+    },
+    {
+      "id": 7,
+      "name": "Bobo",
+      "age": "1",
+      "character": "Loud and playful"
+    },
+    {
+      "id": 8,
+      "name": "Lightning",
+      "age": "4",
+      "character": "Brave and outgoing"
+    }
+  ]
+}

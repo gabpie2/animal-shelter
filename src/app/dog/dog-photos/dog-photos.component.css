@@ -1,0 +1,16 @@
+img {
+    float: left;
+    width:  300px;
+    height: 200px;
+    object-fit:scale-down;
+}
+th, td {
+    border-bottom: 1px solid #ddd;
+}
+
+table {
+    /*padding-left: 50px;*/
+    float: left;
+}
+
+/*lub object-fit: cover; wtedy całe pole wypełnione zdjęciem, ale ucina obrazek*/

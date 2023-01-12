@@ -1,0 +1,7 @@
+<h1 id = 'info'>Our dogs</h1>
+<div *ngFor="let dog of dogs$ | async; let i = index">
+  <h2>{{dog.name}}</h2>
+  <img src={{dogPhoto[i]}}>
+  <p>Age: {{dog.age}}</p>
+  <p>{{dog.character}}</p>
+</div>
