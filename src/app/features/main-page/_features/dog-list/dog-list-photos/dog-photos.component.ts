@@ -1,5 +1,5 @@
 import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
-import { ApiService } from '../../api.service';
+import { ApiService } from '../../../../../core/api/photos-api/photos-api.service';
 
 @Component({
   selector: 'app-dog-photos',
@@ -11,9 +11,9 @@ export class DogPhotosComponent{
   photos=[] as any;
   constructor (private api: ApiService) {
     this.api.getData().subscribe(data => {
-      console.warn(data)
+      //console.warn(data)
       this.photos = data
-      console.log(this.photos);
+      //console.log(this.photos);
     })
   }
 }

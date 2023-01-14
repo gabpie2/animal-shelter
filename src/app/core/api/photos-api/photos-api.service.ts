@@ -9,7 +9,7 @@ export class ApiService {
   constructor(private http: HttpClient) { }
 
   getData() {
-    let url = 'https://dog.ceo/api/breeds/image/random/10';//'https://jsonplaceholder.typicode.com/todos/';
+    let url = 'https://dog.ceo/api/breeds/image/random/10';
     return this.http.get(url);
   }
 }
