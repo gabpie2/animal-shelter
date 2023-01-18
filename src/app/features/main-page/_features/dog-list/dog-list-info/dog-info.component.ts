@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { map, Observable } from 'rxjs';
+import { Observable } from 'rxjs';
+import { InformationService } from 'src/app/core/api/information/information.service';
+import { Dog } from 'src/app/core/api/information/information-interface';
 
 
 @Component({
@@ -9,15 +10,9 @@ import { map, Observable } from 'rxjs';
   styleUrls: ['./dog-info.component.css']
 })
 export class DogInfoComponent {
-  //dogs$ = this.http.get('/api/teams') as any;
-  @Input() dogPhoto=[] as any;
-  dogs$: Observable<any> = this.http.get('/api/dogs');
-  constructor(private http: HttpClient) {}
 
-  //////nic nie robi
-  ngOnInit() {
-  this.dogs$.pipe (
-    map(dogs$ => 
-     dogs$.filter((dog: { age: number; }) => dog.age < 5)) )
-  }
+  public dogs$ = this.photosApi.getDogs() as Observable<Dog[]>
+
+  constructor(private photosApi: InformationService) {}
+
 }

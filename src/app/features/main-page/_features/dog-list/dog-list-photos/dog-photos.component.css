@@ -1,16 +1,9 @@
+h1 {
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 img {
-    float: left;
-    width:  300px;
-    height: 200px;
-    object-fit:scale-down;
+    width:  0%;
+    height: 0%;
 }
-th, td {
-    border-bottom: 1px solid #ddd;
-}
-
-table {
-    /*padding-left: 50px;*/
-    float: left;
-}
-
-/*lub object-fit: cover; wtedy całe pole wypełnione zdjęciem, ale ucina obrazek*/

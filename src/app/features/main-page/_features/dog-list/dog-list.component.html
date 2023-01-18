@@ -1,0 +1,15 @@
+<app-dog-info></app-dog-info>
+<app-dog-photos></app-dog-photos>
+<section class="dog-info__list">
+    <article *ngFor="let dog of listOfDogs$ | async; let i = index">
+      <h2>{{dog.name}}</h2>
+      <img src={{listOfPhotos.message[i]}}>
+      <footer>
+        <ul>
+          <li><strong>Age</strong>: <span>{{dog.age}}</span></li>
+          <li><strong>Description</strong>: <span>{{dog.character}}</span></li>
+        </ul>
+      </footer>
+    </article>
+  </section>
+

@@ -1,5 +1,7 @@
 import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
-import { ApiService } from '../../../../../core/api/photos-api/photos-api.service';
+import { Observable } from 'rxjs';
+import { PhotoService } from '../../../../../core/api/photos/photos.service';
+import { DogPhotos } from '../../../../../core/api/photos/photos-interface';
 
 @Component({
   selector: 'app-dog-photos',
@@ -8,12 +10,13 @@ import { ApiService } from '../../../../../core/api/photos-api/photos-api.servic
 })
 
 export class DogPhotosComponent{
+  
   photos=[] as any;
-  constructor (private api: ApiService) {
-    this.api.getData().subscribe(data => {
-      //console.warn(data)
-      this.photos = data
-      //console.log(this.photos);
+  
+  constructor (private photoService: PhotoService) {
+    this.photoService.getPhotos().subscribe(data => {
+      this.photos = data;
     })
   }
+
 }

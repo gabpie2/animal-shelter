@@ -1,14 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DogInfoComponent } from './dog-list-info/dog-info.component';
-import { DogPhotosComponent } from './dog-list-photos/dog-photos.component';
-
+import { DogListComponent } from './dog-list.component';
+import { DogInfoModule } from './dog-list-info/dog-info.module';
+import { DogPhotosModule } from './dog-list-photos/dog-photos.module';
 
 @NgModule({
-  declarations: [DogInfoComponent, DogPhotosComponent],
+  declarations: [DogListComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    DogInfoModule,
+    DogPhotosModule
   ],
-  exports: [DogInfoComponent, DogPhotosComponent]
+  exports: [DogListComponent]
 })
 export class DogListModule { }
