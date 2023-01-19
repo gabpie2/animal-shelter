@@ -10,7 +10,7 @@ import { NgImageSliderComponent } from 'ng-image-slider';
 
 export class ImageSliderComponent {
   
-  @ViewChild('nav') //działa
+  @ViewChild('nav') 
   slider!: NgImageSliderComponent;
   imageObject: Array<object> = [{
     image: '../assets/fluffy-dogs.jpg',
